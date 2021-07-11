@@ -1,0 +1,17 @@
+B1: Copy source vào thư mục  PHP
+B2: Phân Quyền:
+chown -R root /opt/php
+chmod 777 /opt/php
+B3: Tạo Database:
+1. mysql -u root -p'9603597Van'
+2. CREATE DATABASE db_hankinhnet CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+B4: Tiến hành cài đặt: // lưu ý Ip
+http://172.30.228.185/installer.php
+mysql -u root -p'9603597Van'
+use db_hankinhnet;
+UPDATE `wprr_users` SET `user_pass` = '$P$BRxjC0Tuc5DmtyD4L.z0ChC95gqXjo1' WHERE `wprr_users`.`ID` = 1;
+
+http://172.30.228.185/adminweb/
+sieuweb
+Van@123
